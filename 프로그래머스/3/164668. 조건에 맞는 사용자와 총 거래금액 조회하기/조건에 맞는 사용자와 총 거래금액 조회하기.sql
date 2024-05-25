@@ -8,6 +8,5 @@ SELECT
     JOIN USED_GOODS_USER b ON a.WRITER_ID=b.USER_ID
     where a.status ='done'
     GROUP BY b.USER_ID
-   -- having a.STATUS='DONE' AND TOTAL_SALES>=700000
-   having TOTAL_SALES>=700000
+    having TOTAL_SALES>=700000
     ORDER BY TOTAL_SALES;
